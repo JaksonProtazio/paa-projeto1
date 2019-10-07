@@ -158,12 +158,6 @@ class Tree:
             self.preOrder(atual.esq)
             self.preOrder(atual.dir)
 
-    def posOrder(self, atual):
-        if atual != None:
-            self.posOrder(atual.esq)
-            self.posOrder(atual.dir)
-            print(atual.item, end=" ")
-
     def altura(self, atual):
         if atual == None or atual.esq == None and atual.dir == None:
             return 0
